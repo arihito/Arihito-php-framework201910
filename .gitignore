@@ -1,0 +1,11 @@
+/node_modules/*
+.envrc
+.DS_Store
+._.DS_Store
+.php_cs.cache
+.phpunit.result.cache
+/.idea/
+/cache/
+/log/
+/vendor/
+.psd
