@@ -1,0 +1,20 @@
+<!-- ③ビュー -->
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<title><?= h($test ?? 'アリヒトのホームページ') ?></title>
+	<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+	<div class="container">
+		<div class="card mt-5">
+			<div class="card-body text-center">
+				<?php if (isset($main)) include $main ?>
+				<hr>
+				<p style="font-size:6px">This code is licensed under <a href="https://github.com/zonuexe/oiraphp">AGPL.</a></p>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

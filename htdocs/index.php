@@ -13,6 +13,7 @@ $not_found = function () {
 };
 
 // もしURLにパラメータがあればコールバック関数を実行する
+// そうでなければエラーを表示
 $f = $routes[$request_uri] ?? $not_found;
 [$status, $headers, $body] = $f();
 http_response_code($status);
